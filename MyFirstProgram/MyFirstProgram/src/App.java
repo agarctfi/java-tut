@@ -43,6 +43,14 @@ public class App {
         // Backslash
         System.out.println("This is a backslash: \\");
 
+        /*
+         * 
+         * DATA TYPES EXAMPLES
+         * 
+         */
+
+
+
         // byte
         byte b = 100;
         byte minByte = -128;
@@ -92,6 +100,27 @@ public class App {
         System.out.println("double: " + d + ", min: " + minDouble + ", max: " + maxDouble);
         System.out.println("char: " + c + ", min: " + (int)minChar + ", max: " + (int)maxChar);
         System.out.println("boolean: " + bool + ", " + boolFalse);
+
+
+
+        /*
+         * 
+         * Swap 2 Vars Exercise
+         * 
+         */
+
+         String x = "Water";
+         String y = "Kool-Aid";
+         String temp;
+         
+         temp = x;
+         x = y;
+         y = temp;
+
+         System.out.println("\n\n\nSwapping Vars Exercise: ");
+         System.out.println("X: "+x);
+         System.out.println("Y: "+y);
        
     }
+
 }
