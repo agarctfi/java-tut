@@ -127,23 +127,24 @@ public class App {
 
 
 
-         /*
-          *
-          * User Input Example
-          *
-          */
-          Scanner scanner = new Scanner(System.in);
-          System.out.println("What is your name? ");
-          String name = scanner.nextLine();
-          System.out.println("How old are you? ");
-          int age = scanner.nextInt();
-          scanner.nextLine(); //Clear Scanner
-          System.out.println("What is your favorite food?");
-          String food = scanner.nextLine();
+        try ( /*
+         *
+         * User Input Example
+         *
+         */ Scanner scanner = new Scanner(System.in)) {
+            System.out.println("What is your name? ");
+            String name = scanner.nextLine();
+            System.out.println("How old are you? ");
+            int age = scanner.nextInt();
+            scanner.nextLine(); //Clear Scanner
+            System.out.println("What is your favorite food?");
+            String food = scanner.nextLine();
+            
+            System.out.println("Hello "+name);
+            System.out.println("You are "+age+" years old!");
+            System.out.println(food+" is your favorite food!");
+        }
 
-          System.out.println("Hello "+name);
-          System.out.println("You are "+age+" years old!");
-          System.out.println(food+" is your favorite food!");
           
     }
 
