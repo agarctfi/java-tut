@@ -14,7 +14,7 @@ public class WhileLoopExamples {
     public static void basicWhileLoop() {
         int number = 1;
 
-        System.out.println("Basic While Loop Example:");
+        System.out.println("Basic While Loop Example:"); 
         while (number <= 5) {
             System.out.println("Number: " + number);
             number++; // Increment the number
